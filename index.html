@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pellet Consegna | ENplus A1 a Domicilio in Lombardia – 333 645 3219</title>
+<meta name="description" content="Pellet ENplus A1 certificato con consegna a domicilio in Lombardia. Bancali e sacchi da 15kg. Consegna rapida 24-48h. Chiama: 333 645 3219.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --nero:#060d1a;
+  --notte:#0a1628;
+  --marina:#0f2040;
+  --acciaio:#162d54;
+  --blu:#1a3a6b;
+  --azzurro:#3d9be9;
+  --cielo:#60b4f5;
+  --verde:#00c896;
+  --verdescuro:#00a87e;
+  --bianco:#f0f8ff;
+  --crema:#e8f4fd;
+  --grigio:#8aa8c8;
+  --oro:#ffd166;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--nero);color:var(--crema);overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 40px;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(to bottom,rgba(6,13,26,.97) 0%,transparent 100%);backdrop-filter:blur(8px)}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:2px;color:var(--azzurro);text-decoration:none}
+.nav-logo span{color:var(--verde)}
+.nav-cta{background:var(--verde);color:#fff;padding:10px 24px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;text-decoration:none;border-radius:4px;transition:background .2s}
+.nav-cta:hover{background:var(--verdescuro)}
+
+/* HERO */
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 30px 80px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:
+  radial-gradient(ellipse 70% 50% at 50% 100%,rgba(61,155,233,.12) 0%,transparent 60%),
+  radial-gradient(ellipse 40% 30% at 80% 20%,rgba(0,200,150,.06) 0%,transparent 50%),
+  linear-gradient(180deg,#060d1a 0%,#0a1628 50%,#060d1a 100%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(61,155,233,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(61,155,233,.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero-content{position:relative;z-index:2;max-width:960px}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(0,200,150,.1);border:1px solid rgba(0,200,150,.3);color:var(--verde);padding:8px 22px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;border-radius:30px;margin-bottom:32px;animation:fade-in .8s ease forwards}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,10vw,110px);line-height:.9;letter-spacing:2px;color:var(--bianco);margin-bottom:10px;animation:slide-up .8s ease .2s forwards;opacity:0}
+.hero h1 span{color:var(--azzurro);display:block}
+.hero-tagline{font-family:'DM Serif Display',serif;font-size:clamp(18px,3vw,26px);font-style:italic;color:var(--grigio);margin-bottom:30px;animation:slide-up .8s ease .35s forwards;opacity:0}
+.hero-sub{font-size:clamp(15px,2vw,18px);font-weight:300;color:rgba(240,248,255,.7);line-height:1.7;max-width:620px;margin:0 auto 45px;animation:slide-up .8s ease .5s forwards;opacity:0}
+.hero-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:50px;animation:slide-up .8s ease .65s forwards;opacity:0}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--azzurro),#1e6fc8);color:#fff;padding:20px 48px;font-size:19px;font-weight:700;text-decoration:none;border-radius:4px;box-shadow:0 8px 32px rgba(61,155,233,.4);transition:all .2s}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(61,155,233,.55)}
+.btn-wa{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:20px 48px;font-size:19px;font-weight:700;text-decoration:none;border-radius:4px;box-shadow:0 8px 32px rgba(37,211,102,.3);transition:all .2s}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(37,211,102,.45)}
+.hero-trust{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;animation:fade-in .8s ease .8s forwards;opacity:0}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(240,248,255,.55);font-weight:500}
+.trust-item::before{content:'✓';color:var(--verde);font-weight:700;font-size:15px}
+
+/* URGENCY */
+.urgency{background:linear-gradient(90deg,var(--azzurro),var(--verde),var(--azzurro));background-size:200%;animation:shimmer 4s linear infinite;padding:14px;text-align:center;font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:3px;color:#fff}
+@keyframes shimmer{0%{background-position:0%}100%{background-position:200%}}
+
+/* SEZIONI */
+section{padding:90px 30px}
+.section-tag{font-size:11px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:var(--azzurro);display:block;text-align:center;margin-bottom:12px}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,6vw,60px);letter-spacing:1px;color:var(--bianco);text-align:center;line-height:1;margin-bottom:16px}
+.section-sub{font-size:17px;font-weight:300;color:rgba(240,248,255,.6);text-align:center;max-width:560px;margin:0 auto 60px;line-height:1.7}
+
+/* FEATURES */
+.perche{background:var(--notte);border-top:1px solid rgba(61,155,233,.1)}
+.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px;max-width:1100px;margin:0 auto}
+.feat{background:var(--marina);padding:40px 32px;position:relative;overflow:hidden;transition:background .3s}
+.feat::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--azzurro),var(--verde));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.feat:hover{background:var(--acciaio)}
+.feat:hover::after{transform:scaleX(1)}
+.feat-icon{font-size:44px;margin-bottom:20px;display:block}
+.feat h3{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:1px;color:var(--azzurro);margin-bottom:12px}
+.feat p{font-size:15px;color:rgba(240,248,255,.6);line-height:1.7}
+
+/* CERTIFICAZIONE */
+.certificazione{background:linear-gradient(135deg,var(--notte) 0%,var(--marina) 100%);border-top:1px solid rgba(61,155,233,.1);border-bottom:1px solid rgba(61,155,233,.1)}
+.cert-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.cert-badge-wrap{text-align:center}
+.cert-badge{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;width:200px;height:200px;border-radius:50%;background:linear-gradient(135deg,var(--acciaio),var(--blu));border:3px solid var(--azzurro);box-shadow:0 0 60px rgba(61,155,233,.3)}
+.cert-badge .cert-label{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:3px;color:var(--grigio);margin-bottom:5px}
+.cert-badge .cert-nome{font-family:'Bebas Neue',sans-serif;font-size:42px;color:var(--verde);letter-spacing:2px;line-height:1}
+.cert-badge .cert-classe{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--bianco);letter-spacing:2px}
+.cert-testo h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,5vw,52px);color:var(--bianco);margin-bottom:20px;line-height:1}
+.cert-testo h2 span{color:var(--verde)}
+.cert-testo p{font-size:16px;color:rgba(240,248,255,.65);line-height:1.8;margin-bottom:15px}
+.cert-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+.cert-list li{display:flex;align-items:center;gap:12px;font-size:15px;color:rgba(240,248,255,.75)}
+.cert-list li::before{content:'✓';background:var(--verde);color:#fff;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0}
+
+/* NUMERI */
+.numeri{background:var(--nero);padding:70px 30px}
+.numeri-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2px;max-width:900px;margin:0 auto}
+.numero-item{text-align:center;padding:40px 20px;background:var(--notte)}
+.numero-val{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,8vw,80px);color:var(--azzurro);line-height:1;display:block;margin-bottom:8px}
+.numero-lab{font-size:13px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(240,248,255,.45)}
+
+/* PRODOTTI */
+.prodotti{background:var(--notte)}
+.prodotti-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2px;max-width:1000px;margin:0 auto}
+.prodotto{background:var(--marina);padding:45px 35px;border:1px solid rgba(61,155,233,.1);transition:border-color .3s;position:relative}
+.prodotto:hover{border-color:rgba(61,155,233,.4)}
+.prodotto.featured{border-color:var(--azzurro);background:linear-gradient(135deg,var(--acciaio),var(--marina))}
+.prod-badge{position:absolute;top:20px;right:20px;background:var(--azzurro);color:#fff;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:20px}
+.prod-icon{font-size:52px;margin-bottom:20px;display:block}
+.prodotto h3{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;color:var(--bianco);margin-bottom:8px}
+.prod-sub{font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--azzurro);margin-bottom:16px;display:block}
+.prodotto p{font-size:15px;color:rgba(240,248,255,.65);line-height:1.7;margin-bottom:24px}
+.prod-specs{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
+.prod-spec{display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(240,248,255,.7)}
+.prod-spec::before{content:'✓';color:var(--verde);font-weight:700;flex-shrink:0}
+.prod-cta{display:block;text-align:center;border:1px solid var(--azzurro);color:var(--azzurro);padding:14px;font-weight:700;font-size:15px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:all .2s}
+.prod-cta:hover{background:var(--azzurro);color:#fff}
+.prodotto.featured .prod-cta{background:var(--azzurro);color:#fff;border-color:transparent;box-shadow:0 6px 24px rgba(61,155,233,.4)}
+
+/* COME FUNZIONA */
+.come{background:var(--nero)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;max-width:1000px;margin:0 auto}
+.step{text-align:center}
+.step-n{width:68px;height:68px;border-radius:50%;border:2px solid var(--azzurro);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:30px;color:var(--azzurro);margin:0 auto 20px;transition:all .3s}
+.step:hover .step-n{background:var(--azzurro);color:#fff}
+.step h3{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;color:var(--bianco);margin-bottom:10px}
+.step p{font-size:15px;color:rgba(240,248,255,.55);line-height:1.6}
+
+/* GARANZIE */
+.garanzie{background:var(--notte);border-top:1px solid rgba(61,155,233,.1)}
+.garanzie-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px;max-width:1100px;margin:0 auto}
+.garanzia{background:var(--marina);padding:32px 28px;display:flex;gap:18px;transition:background .3s}
+.garanzia:hover{background:var(--acciaio)}
+.gar-ico{font-size:34px;flex-shrink:0}
+.garanzia h4{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:1px;color:var(--verde);margin-bottom:6px}
+.garanzia p{font-size:14px;color:rgba(240,248,255,.55);line-height:1.6}
+
+/* ZONE */
+.zone{background:var(--nero);border-top:1px solid rgba(61,155,233,.08)}
+.zone-wrap{max-width:960px;margin:0 auto;text-align:center}
+.zone-list{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:10px}
+.zona-tag{background:var(--marina);border:1px solid rgba(61,155,233,.2);color:rgba(240,248,255,.65);padding:8px 18px;font-size:13px;font-weight:500;border-radius:3px;text-decoration:none;transition:all .2s;cursor:pointer}
+.zona-tag:hover{border-color:var(--azzurro);color:var(--azzurro)}
+
+/* RECENSIONI */
+.recensioni{background:var(--notte)}
+.rec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px;max-width:1100px;margin:0 auto}
+.rec-card{background:var(--marina);padding:36px 30px;position:relative;border:1px solid rgba(61,155,233,.07)}
+.stelle{color:var(--oro);font-size:18px;margin-bottom:16px;display:block}
+.rec-testo{font-size:15px;color:rgba(240,248,255,.7);line-height:1.75;margin-bottom:20px;font-style:italic}
+.rec-autore{font-size:13px;font-weight:700;color:var(--azzurro);letter-spacing:2px;text-transform:uppercase}
+.virgolette{position:absolute;top:16px;right:22px;font-size:72px;color:rgba(61,155,233,.08);font-family:'DM Serif Display',serif;line-height:1}
+
+/* CTA FINALE */
+.cta-finale{background:linear-gradient(135deg,#050b15 0%,#0a1f3d 50%,#050b15 100%);text-align:center;padding:100px 30px;position:relative;overflow:hidden}
+.cta-finale::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:600px;background:radial-gradient(ellipse,rgba(61,155,233,.12) 0%,transparent 65%);pointer-events:none}
+.cta-inner{position:relative;z-index:1;max-width:700px;margin:0 auto}
+.cta-finale h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,7vw,72px);color:var(--bianco);line-height:.95;letter-spacing:2px;margin-bottom:20px}
+.cta-finale h2 span{color:var(--azzurro)}
+.cta-finale p{font-size:18px;color:rgba(240,248,255,.65);margin-bottom:40px;line-height:1.65}
+.cta-tel{display:block;font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,9vw,80px);color:#fff;text-decoration:none;letter-spacing:3px;margin-bottom:8px;transition:color .2s}
+.cta-tel:hover{color:var(--azzurro)}
+.cta-orari{font-size:13px;color:rgba(240,248,255,.35);margin-bottom:32px;letter-spacing:1px}
+.cta-wa{display:inline-flex;align-items:center;gap:12px;background:#25D366;color:#fff;padding:18px 50px;font-size:22px;font-weight:700;text-decoration:none;border-radius:4px;box-shadow:0 8px 30px rgba(37,211,102,.35);transition:all .2s}
+.cta-wa:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(37,211,102,.5)}
+
+/* FOOTER */
+footer{background:var(--nero);border-top:1px solid rgba(61,155,233,.1);padding:40px 30px;text-align:center}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:2px;color:var(--azzurro);margin-bottom:12px;display:block}
+.footer-logo span{color:var(--verde)}
+.footer-info{font-size:13px;color:rgba(240,248,255,.35);line-height:1.9}
+.footer-info a{color:rgba(61,155,233,.7);text-decoration:none}
+.footer-info a:hover{color:var(--azzurro)}
+
+/* FLOATING */
+.floating{position:fixed;bottom:28px;right:28px;z-index:99;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.fl-btn{display:flex;align-items:center;gap:8px;padding:13px 20px;border-radius:50px;font-weight:700;font-size:15px;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,.5);white-space:nowrap;transition:transform .2s}
+.fl-btn:hover{transform:translateY(-3px)}
+.fl-tel{background:var(--azzurro);color:#fff}
+.fl-wa{background:#25D366;color:#fff}
+
+/* ANIMAZIONI */
+@keyframes fade-in{from{opacity:0}to{opacity:1}}
+@keyframes slide-up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* MOBILE */
+@media(max-width:768px){
+  nav{padding:14px 20px}.nav-cta{display:none}
+  section{padding:60px 20px}
+  .hero-ctas{flex-direction:column;align-items:center}
+  .btn-primary,.btn-wa{width:100%;max-width:340px;justify-content:center}
+  .cert-inner{grid-template-columns:1fr}
+  .cert-badge-wrap{display:none}
+  .floating{bottom:18px;right:14px}
+  .fl-btn span{display:none}
+  .fl-btn{padding:14px 18px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">Pellet<span>Consegna</span>.it</a>
+  <a href="tel:+393336453219" class="nav-cta">📞 333 645 3219</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🏆 Certificato ENplus A1 · Consegna 24-48h · Lombardia</div>
+    <h1>PELLET<span>A DOMICILIO</span></h1>
+    <p class="hero-tagline">Il combustibile che fa la differenza, consegnato a casa tua</p>
+    <p class="hero-sub">Pellet certificato ENplus A1 — il più alto standard qualitativo disponibile. Consegna rapida in tutta la Lombardia. Bancali e sacchi da 15 kg. Pagamento alla consegna.</p>
+    <div class="hero-ctas">
+      <a href="tel:+393336453219" class="btn-primary">📞 Chiama — 333 645 3219</a>
+      <a href="https://wa.me/393336453219?text=Ciao%2C%20vorrei%20un%20preventivo%20per%20il%20pellet%20ENplus%20A1" class="btn-wa">💬 WhatsApp</a>
+    </div>
+    <div class="hero-trust">
+      <span class="trust-item">ENplus A1 certificato</span>
+      <span class="trust-item">Consegna 24-48h</span>
+      <span class="trust-item">Preventivo gratuito</span>
+      <span class="trust-item">Pagamento alla consegna</span>
+    </div>
+  </div>
+</section>
+
+<div class="urgency">🔥 PREZZI PRESTAGIONALI BLOCCATI · ORDINA ORA E RISPARMIA · SCORTE LIMITATE 🔥</div>
+
+<section class="perche">
+  <span class="section-tag">Perché sceglierci</span>
+  <h2 class="section-title reveal">PELLET DI QUALITÀ SUPERIORE</h2>
+  <p class="section-sub reveal">Non tutto il pellet è uguale. Il nostro è certificato ENplus A1 — la classe più alta — e si vede dalla prima accensione.</p>
+  <div class="features-grid">
+    <div class="feat reveal"><span class="feat-icon">🏆</span><h3>ENplus A1 Certificato</h3><p>Il certificato ENplus A1 garantisce umidità &lt;10%, ceneri &lt;0.7% e alto potere calorifico. Il top assoluto per stufe e caldaie a pellet.</p></div>
+    <div class="feat reveal"><span class="feat-icon">🌲</span><h3>100% Legno Naturale</h3><p>Nessun additivo, nessun collante chimico. Puro legno vergine compresso — abete, faggio e pino selezionati da foreste certificate.</p></div>
+    <div class="feat reveal"><span class="feat-icon">🚚</span><h3>Consegna Rapida</h3><p>Portiamo il bancale direttamente dove vuoi tu. Con transpallet se necessario. Nessuna fatica da parte tua, consegniamo in 24-48 ore.</p></div>
+    <div class="feat reveal"><span class="feat-icon">💶</span><h3>Pagamento alla Consegna</h3><p>Paghi solo quando vedi e tocchi il pellet. Zero anticipo, zero rischi. Preventivo gratuito e senza impegno.</p></div>
+  </div>
+</section>
+
+<section class="certificazione">
+  <div class="cert-inner">
+    <div class="cert-badge-wrap reveal">
+      <div class="cert-badge">
+        <span class="cert-label">CERTIFICATO</span>
+        <span class="cert-nome">ENplus</span>
+        <span class="cert-classe">CLASSE A1</span>
+      </div>
+    </div>
+    <div class="cert-testo reveal">
+      <h2>Il gold standard<br><span>del pellet</span></h2>
+      <p>ENplus A1 è la certificazione più restrittiva al mondo per il pellet di legno. Significa che ogni singolo sacco è controllato e garantito su oltre 20 parametri di qualità.</p>
+      <ul class="cert-list">
+        <li>Umidità inferiore al 10%</li>
+        <li>Ceneri inferiori allo 0.7%</li>
+        <li>Potere calorifico superiore a 4.6 kWh/kg</li>
+        <li>Zero additivi chimici o collanti</li>
+        <li>Stufa sempre pulita, meno manutenzione</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="numeri">
+  <div class="numeri-grid">
+    <div class="numero-item reveal"><span class="numero-val">&lt;10%</span><span class="numero-lab">Umidità garantita</span></div>
+    <div class="numero-item reveal"><span class="numero-val">A1</span><span class="numero-lab">Classe ENplus</span></div>
+    <div class="numero-item reveal"><span class="numero-val">24h</span><span class="numero-lab">Consegna rapida</span></div>
+    <div class="numero-item reveal"><span class="numero-val">10+</span><span class="numero-lab">Anni esperienza</span></div>
+  </div>
+</section>
+
+<section class="prodotti">
+  <span class="section-tag">I nostri formati</span>
+  <h2 class="section-title reveal">SCEGLI IL TUO FORMATO</h2>
+  <p class="section-sub reveal">Dal sacco singolo al bancale intero. Adattiamo la fornitura alle tue esigenze.</p>
+  <div class="prodotti-grid">
+    <div class="prodotto reveal">
+      <span class="prod-icon">🛍️</span>
+      <h3>Sacchi da 15 kg</h3>
+      <span class="prod-sub">ENplus A1 · Abete / Faggio</span>
+      <p>Ideali per chi ha poco spazio o vuole provare la qualità. Pratici da trasportare e stivare in casa.</p>
+      <div class="prod-specs">
+        <span class="prod-spec">Certificato ENplus A1</span>
+        <span class="prod-spec">Umidità &lt;10%</span>
+        <span class="prod-spec">Consegna a domicilio</span>
+      </div>
+      <a href="tel:+393336453219" class="prod-cta">Chiedi Prezzo →</a>
+    </div>
+    <div class="prodotto featured reveal">
+      <span class="prod-badge">⭐ Più Venduto</span>
+      <span class="prod-icon">📦</span>
+      <h3>Bancale Intero</h3>
+      <span class="prod-sub">ENplus A1 · 70 sacchi da 15 kg</span>
+      <p>Il formato più conveniente per tutta la stagione. Massimo risparmio garantito, miglior prezzo al kg.</p>
+      <div class="prod-specs">
+        <span class="prod-spec">70 sacchi da 15 kg</span>
+        <span class="prod-spec">Certificato ENplus A1</span>
+        <span class="prod-spec">Consegna con transpallet</span>
+        <span class="prod-spec">Miglior prezzo al kg</span>
+      </div>
+      <a href="tel:+393336453219" class="prod-cta">Chiedi Prezzo →</a>
+    </div>
+  </div>
+</section>
+
+<section class="come">
+  <span class="section-tag">Semplicissimo</span>
+  <h2 class="section-title reveal">ORDINI IN 3 MOSSE</h2>
+  <p class="section-sub reveal">Nessuna complicazione. Chiami, accordi, ricevi.</p>
+  <div class="steps">
+    <div class="step reveal"><div class="step-n">1</div><h3>Chiama o scrivi</h3><p>Contattaci al 333 645 3219 o via WhatsApp. Risposta immediata in orario lavorativo.</p></div>
+    <div class="step reveal"><div class="step-n">2</div><h3>Preventivo gratuito</h3><p>Ti diciamo disponibilità, prezzo e data consegna. Nessun impegno da parte tua.</p></div>
+    <div class="step reveal"><div class="step-n">3</div><h3>Consegna a casa</h3><p>Portiamo il pellet dove vuoi tu in 24-48 ore. Paghi solo alla consegna.</p></div>
+  </div>
+</section>
+
+<section class="garanzie">
+  <span class="section-tag">Le nostre garanzie</span>
+  <h2 class="section-title reveal">COMPRI CON FIDUCIA</h2>
+  <div class="garanzie-grid">
+    <div class="garanzia reveal"><span class="gar-ico">🏆</span><div><h4>Qualità Certificata</h4><p>Solo ENplus A1. Se il prodotto non è conforme alla certificazione, lo ritiriamo a nostre spese.</p></div></div>
+    <div class="garanzia reveal"><span class="gar-ico">📞</span><div><h4>Risposta Immediata</h4><p>Nessun messaggio ignorato. Rispondiamo sempre entro poche ore negli orari lavorativi.</p></div></div>
+    <div class="garanzia reveal"><span class="gar-ico">🚚</span><div><h4>Consegna Puntuale</h4><p>Rispettiamo sempre il giorno concordato. In caso contrario ti avvisiamo tempestivamente.</p></div></div>
+    <div class="garanzia reveal"><span class="gar-ico">💶</span><div><h4>Zero Anticipo</h4><p>Paghi solo quando vedi il pellet davanti a te. Nessun rischio, nessun anticipo richiesto.</p></div></div>
+  </div>
+</section>
+
+<section class="zone">
+  <div class="zone-wrap">
+    <span class="section-tag">Zone di consegna</span>
+    <h2 class="section-title reveal">TUTTA LA LOMBARDIA</h2>
+    <p class="section-sub reveal">Dalla provincia di Lodi a Milano, Pavia e Cremona. Oltre 60 comuni serviti.</p>
+    <div class="zone-list reveal">
+      <a href="pellet-san-donato-milanese.html" class="zona-tag">San Donato Milanese</a>
+      <a href="pellet-san-giuliano-milanese.html" class="zona-tag">San Giuliano Milanese</a>
+      <a href="pellet-sesto-ulteriano.html" class="zona-tag">Sesto Ulteriano</a>
+      <a href="pellet-poasco.html" class="zona-tag">Poasco</a>
+      <a href="pellet-noverasco.html" class="zona-tag">Noverasco</a>
+      <a href="pellet-segrate.html" class="zona-tag">Segrate</a>
+      <a href="pellet-peschiera-borromeo.html" class="zona-tag">Peschiera Borromeo</a>
+      <a href="pellet-rodano.html" class="zona-tag">Rodano</a>
+      <a href="pellet-pioltello.html" class="zona-tag">Pioltello</a>
+      <a href="pellet-settala.html" class="zona-tag">Settala</a>
+      <a href="pellet-pantigliate.html" class="zona-tag">Pantigliate</a>
+      <a href="pellet-comazzo.html" class="zona-tag">Comazzo</a>
+      <a href="pellet-merlino.html" class="zona-tag">Merlino</a>
+      <a href="pellet-paullo.html" class="zona-tag">Paullo</a>
+      <a href="pellet-tribiano.html" class="zona-tag">Tribiano</a>
+      <a href="pellet-siziano.html" class="zona-tag">Siziano</a>
+      <a href="pellet-zelo-buon-persico.html" class="zona-tag">Zelo Buon Persico</a>
+      <a href="pellet-spino-d-adda.html" class="zona-tag">Spino d'Adda</a>
+      <a href="pellet-pandino.html" class="zona-tag">Pandino</a>
+      <a href="pellet-crema.html" class="zona-tag">Crema</a>
+      <a href="pellet-bagnolo-cremasco.html" class="zona-tag">Bagnolo Cremasco</a>
+      <a href="pellet-crespiatica.html" class="zona-tag">Crespiatica</a>
+      <a href="pellet-boffalora-d-adda.html" class="zona-tag">Boffalora d'Adda</a>
+      <a href="pellet-montanaso-lombardo.html" class="zona-tag">Montanaso Lombardo</a>
+      <a href="pellet-dovera.html" class="zona-tag">Dovera</a>
+      <a href="pellet-lodi.html" class="zona-tag">Lodi</a>
+      <a href="pellet-cervignano-d-adda.html" class="zona-tag">Cervignano d'Adda</a>
+      <a href="pellet-mulazzano.html" class="zona-tag">Mulazzano</a>
+      <a href="pellet-sordio.html" class="zona-tag">Sordio</a>
+      <a href="pellet-dresano.html" class="zona-tag">Dresano</a>
+      <a href="pellet-mediglia.html" class="zona-tag">Mediglia</a>
+      <a href="pellet-marudo.html" class="zona-tag">Marudo</a>
+      <a href="pellet-triginto.html" class="zona-tag">Triginto</a>
+      <a href="pellet-riozzo.html" class="zona-tag">Riozzo</a>
+      <a href="pellet-melegnano.html" class="zona-tag">Melegnano</a>
+      <a href="pellet-bornasco.html" class="zona-tag">Bornasco</a>
+      <a href="pellet-san-zenone-al-lambro.html" class="zona-tag">San Zenone al Lambro</a>
+      <a href="pellet-tavazzano-con-villavesco.html" class="zona-tag">Tavazzano con Villavesco</a>
+      <a href="pellet-salerano-al-lambro.html" class="zona-tag">Salerano al Lambro</a>
+      <a href="pellet-lodi-vecchio.html" class="zona-tag">Lodi Vecchio</a>
+      <a href="pellet-valera-fratta.html" class="zona-tag">Valera Fratta</a>
+      <a href="pellet-torre-vecchia-pia.html" class="zona-tag">Torre Vecchia Pia</a>
+      <a href="pellet-villanterio.html" class="zona-tag">Villanterio</a>
+      <a href="pellet-sant-angelo-lodigiano.html" class="zona-tag">Sant'Angelo Lodigiano</a>
+      <a href="pellet-san-colombano-al-lambro.html" class="zona-tag">San Colombano al Lambro</a>
+      <a href="pellet-massalengo.html" class="zona-tag">Massalengo</a>
+      <a href="pellet-borghetto-lodigiano.html" class="zona-tag">Borghetto Lodigiano</a>
+      <a href="pellet-opera.html" class="zona-tag">Opera</a>
+      <a href="pellet-san-martino-in-strada.html" class="zona-tag">San Martino in Strada</a>
+      <a href="pellet-brembio.html" class="zona-tag">Brembio</a>
+      <a href="pellet-ossago-lodigiano.html" class="zona-tag">Ossago Lodigiano</a>
+      <a href="pellet-livraga.html" class="zona-tag">Livraga</a>
+      <a href="pellet-basiasco.html" class="zona-tag">Basiasco</a>
+      <a href="pellet-mairano.html" class="zona-tag">Mairano</a>
+      <a href="pellet-cavenago-d-adda.html" class="zona-tag">Cavenago d'Adda</a>
+      <a href="pellet-turano-lodigiano.html" class="zona-tag">Turano Lodigiano</a>
+      <a href="pellet-secugnago.html" class="zona-tag">Secugnago</a>
+      <a href="pellet-codogno.html" class="zona-tag">Codogno</a>
+      <a href="pellet-graffignana.html" class="zona-tag">Graffignana</a>
+      <a href="pellet-belgioioso.html" class="zona-tag">Belgioioso</a>
+      <a href="pellet-caselle-lurani.html" class="zona-tag">Caselle Lurani</a>
+      <a href="pellet-carpiano.html" class="zona-tag">Carpiano</a>
+      <a href="pellet-lacchiarella.html" class="zona-tag">Lacchiarella</a>
+    </div>
+  </div>
+</section>
+
+<section class="recensioni">
+  <span class="section-tag">Clienti soddisfatti</span>
+  <h2 class="section-title reveal">CHI CI HA SCELTO TORNA SEMPRE</h2>
+  <div class="rec-grid">
+    <div class="rec-card reveal"><div class="virgolette">"</div><span class="stelle">★★★★★</span><p class="rec-testo">Pellet di qualità eccezionale. La stufa non si sporca quasi mai e il calore è uniforme. Li richiamo ogni anno prima dell'inverno senza pensarci due volte.</p><span class="rec-autore">— Davide R., Lodi</span></div>
+    <div class="rec-card reveal"><div class="virgolette">"</div><span class="stelle">★★★★★</span><p class="rec-testo">Ho ordinato un bancale intero. Consegna puntualissima, pellet confezionato perfettamente e zero polvere. Notevole risparmio rispetto al supermercato.</p><span class="rec-autore">— Francesca T., Melegnano</span></div>
+    <div class="rec-card reveal"><div class="virgolette">"</div><span class="stelle">★★★★★</span><p class="rec-testo">Servizio impeccabile. Ho chiamato la mattina e il pomeriggio avevo già il bancale in garage. Personale gentile e professionale. Consiglio a tutti.</p><span class="rec-autore">— Marco B., San Donato Milanese</span></div>
+  </div>
+</section>
+
+<section class="cta-finale">
+  <div class="cta-inner">
+    <h2>ORDINA IL TUO<br><span>PELLET OGGI</span></h2>
+    <p>Preventivo gratuito e senza impegno. Consegna rapida a domicilio. Pagamento alla consegna. Il pellet ENplus A1 che fa la differenza.</p>
+    <a href="tel:+393336453219" class="cta-tel">333 645 3219</a>
+    <p class="cta-orari">LUN–SAB · 8:00–18:00 · RISPOSTA IMMEDIATA</p>
+    <a href="https://wa.me/393336453219?text=Ciao%2C%20vorrei%20un%20preventivo%20per%20il%20pellet%20ENplus%20A1" class="cta-wa">💬 Scrivici su WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-logo">Pellet<span>Consegna</span>.it</span>
+  <p class="footer-info">
+    P.IVA IT10927440965 · <a href="tel:+393336453219">333 645 3219</a><br>
+    <a href="privacy.html">Privacy Policy</a> · <a href="cookie.html">Cookie Policy</a><br>
+    <small style="opacity:.4">© 2026 PelletConsegna.it · Tutti i diritti riservati</small>
+  </p>
+</footer>
+
+<div class="floating">
+  <a href="https://wa.me/393336453219" class="fl-btn fl-wa">💬 <span>WhatsApp</span></a>
+  <a href="tel:+393336453219" class="fl-btn fl-tel">📞 <span>Chiama</span></a>
+</div>
+
+<script>
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach((el,i)=>{
+  const siblings=[...el.parentElement.querySelectorAll('.reveal')];
+  const idx=siblings.indexOf(el);
+  if(idx>0)el.style.transitionDelay=(idx*.12)+'s';
+  obs.observe(el);
+});
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"PelletConsegna.it","description":"Vendita e consegna pellet ENplus A1 a domicilio in Lombardia.","url":"https://www.pelletconsegna.it","telephone":"+393336453219","address":{"@type":"PostalAddress","streetAddress":"Via Colombera 2","addressLocality":"Casalmaiocco","addressRegion":"LO","addressCountry":"IT"},"areaServed":"Lombardia","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}]}
+</script>
+</body>
+</html>
