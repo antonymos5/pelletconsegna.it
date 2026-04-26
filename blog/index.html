@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Pellet | Guide, Prezzi e Consigli sul Pellet ENplus A1 | PelletConsegna.it</title>
+<meta name="description" content="Guide pratiche sul pellet ENplus A1: prezzi 2025, differenza qualità, come scegliere il bancale giusto. Consegna a domicilio in Lombardia.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.pelletconsegna.it/blog/"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--nero:#060d1a;--notte:#0a1628;--marina:#0f2040;--acciaio:#162d54;--blu:#1a3a6b;--azzurro:#3d9be9;--verde:#00c896;--verdescuro:#00a87e;--bianco:#f0f8ff;--crema:#e8f4fd;--grigio:#8aa8c8;--oro:#ffd166}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--nero);color:var(--crema);overflow-x:hidden}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 40px;display:flex;justify-content:space-between;align-items:center;background:rgba(6,13,26,.97);backdrop-filter:blur(8px)}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:2px;color:var(--azzurro);text-decoration:none}
+.nav-logo span{color:var(--verde)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:var(--crema);text-decoration:none;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--azzurro)}
+.nav-cta{background:var(--verde);color:#fff;padding:10px 24px;font-weight:700;font-size:15px;text-decoration:none;border-radius:4px}
+
+/* HERO BLOG */
+.hero-blog{min-height:45vh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 30px 70px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 100%,rgba(61,155,233,.15) 0%,transparent 60%),linear-gradient(180deg,#060d1a 0%,#0a1628 100%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(61,155,233,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(61,155,233,.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero-content{position:relative;z-index:2;max-width:800px}
+.breadcrumb{font-size:.85rem;color:rgba(240,248,255,.45);margin-bottom:1.2rem}
+.breadcrumb a{color:var(--azzurro);text-decoration:none}
+.hero-badge{display:inline-block;background:rgba(0,200,150,.1);border:1px solid rgba(0,200,150,.3);color:var(--verde);padding:7px 20px;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;border-radius:30px;margin-bottom:20px}
+.hero-blog h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,7vw,80px);line-height:.9;letter-spacing:2px;color:var(--bianco);margin-bottom:16px}
+.hero-blog h1 span{color:var(--azzurro)}
+.hero-blog p{font-size:18px;font-weight:300;color:rgba(240,248,255,.65);max-width:560px;margin:0 auto;line-height:1.7}
+
+/* ARTICOLI */
+.blog-section{padding:80px 30px}
+.inner{max-width:1100px;margin:0 auto}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2px;margin-top:3rem}
+
+.card{background:var(--marina);border:1px solid rgba(61,155,233,.1);transition:border-color .3s,transform .3s;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.card:hover{border-color:rgba(61,155,233,.4);transform:translateY(-4px)}
+.card-top{background:linear-gradient(135deg,var(--acciaio),var(--marina));padding:2rem;position:relative;overflow:hidden}
+.card-top::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(61,155,233,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(61,155,233,.03) 1px,transparent 1px);background-size:30px 30px}
+.card-top::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--azzurro),var(--verde))}
+.card-cat{font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--verde);margin-bottom:.6rem;position:relative;z-index:1}
+.card-title{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:1px;color:var(--bianco);line-height:1.1;position:relative;z-index:1}
+.card-body{padding:1.6rem;flex:1;display:flex;flex-direction:column}
+.card-desc{font-size:.92rem;color:rgba(240,248,255,.6);line-height:1.7;flex:1}
+.card-meta{font-size:.78rem;color:rgba(240,248,255,.35);margin-top:1rem;padding-top:.8rem;border-top:1px solid rgba(61,155,233,.1);letter-spacing:.5px}
+.card-link{display:inline-flex;align-items:center;gap:.4em;font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:1px;color:var(--azzurro);margin-top:1rem;text-decoration:none;transition:color .2s}
+.card-link:hover{color:var(--verde)}
+
+/* COMING SOON */
+.card.coming{opacity:.5;pointer-events:none}
+.badge-soon{display:inline-block;background:var(--acciaio);color:var(--grigio);font-family:'Bebas Neue',sans-serif;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;padding:.3em 1em;margin-top:.8rem}
+
+/* CTA */
+.cta-box{background:linear-gradient(135deg,#050b15 0%,#0a1f3d 50%,#050b15 100%);text-align:center;padding:70px 30px;margin-top:60px;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(61,155,233,.1) 0%,transparent 65%);pointer-events:none}
+.cta-inner{position:relative;z-index:1}
+.cta-box h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,5vw,54px);color:var(--bianco);margin-bottom:12px;letter-spacing:1px}
+.cta-box h2 span{color:var(--azzurro)}
+.cta-box p{font-size:17px;color:rgba(240,248,255,.6);margin-bottom:28px}
+.cta-tel{display:block;font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,7vw,64px);color:#fff;text-decoration:none;letter-spacing:3px;margin-bottom:6px;transition:color .2s}
+.cta-tel:hover{color:var(--azzurro)}
+.cta-note{font-size:12px;color:rgba(240,248,255,.3);margin-bottom:24px;letter-spacing:1px}
+.cta-wa{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:16px 44px;font-size:20px;font-weight:700;text-decoration:none;border-radius:4px}
+
+footer{background:var(--nero);border-top:1px solid rgba(61,155,233,.1);padding:30px;text-align:center}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;color:var(--azzurro);margin-bottom:10px;display:block}
+.footer-logo span{color:var(--verde)}
+.footer-info{font-size:13px;color:rgba(240,248,255,.3);line-height:1.9}
+.footer-info a{color:rgba(61,155,233,.6);text-decoration:none}
+
+.floating{position:fixed;bottom:28px;right:28px;z-index:99;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.fl-btn{display:flex;align-items:center;gap:8px;padding:13px 20px;border-radius:50px;font-weight:700;font-size:15px;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,.5);white-space:nowrap;transition:transform .2s}
+.fl-btn:hover{transform:translateY(-3px)}
+.fl-tel{background:var(--azzurro);color:#fff}
+.fl-wa{background:#25D366;color:#fff}
+
+@media(max-width:768px){nav{padding:12px 18px}.nav-links{display:none}.nav-cta{font-size:13px;padding:8px 16px}section{padding:50px 20px}.floating{bottom:16px;right:12px}.fl-btn span{display:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/index.html" class="nav-logo">Pellet<span>Consegna</span>.it</a>
+  <ul class="nav-links">
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/blog/" class="active">Blog</a></li>
+  </ul>
+  <a href="tel:+393336453219" class="nav-cta">📞 333 645 3219</a>
+</nav>
+
+<div class="hero-blog">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="breadcrumb"><a href="/index.html">Home</a> › Blog</div>
+    <div class="hero-badge">📚 Guide & Consigli sul Pellet</div>
+    <h1>BLOG <span>PELLET</span></h1>
+    <p>Prezzi, certificazioni, consigli di acquisto e guide pratiche sul pellet ENplus A1 in Lombardia.</p>
+  </div>
+</div>
+
+<div class="blog-section">
+  <div class="inner">
+    <div class="blog-grid">
+
+      <!-- ARTICOLO 1 — PUBBLICATO -->
+      <article class="card">
+        <div class="card-top">
+          <div class="card-cat">💰 Prezzi & Acquisto</div>
+          <div class="card-title">Quanto Costa il Pellet ENplus A1 nel 2025</div>
+        </div>
+        <div class="card-body">
+          <p class="card-desc">Prezzi reali del pellet ENplus A1 in Lombardia nel 2025. Bancale intero vs sacchi singoli, quando conviene ordinare e come risparmiare sulla stagione.</p>
+          <div class="card-meta">📅 Aprile 2025 · ⏱ 4 min di lettura</div>
+          <a href="/blog/quanto-costa-pellet-enplus-a1-2025.html" class="card-link">Leggi l'articolo →</a>
+        </div>
+      </article>
+
+      <!-- ARTICOLO 2 — COMING SOON -->
+      <article class="card coming">
+        <div class="card-top">
+          <div class="card-cat">🏆 Qualità</div>
+          <div class="card-title">Pellet ENplus A1: Cos'è e Perché Sceglierlo</div>
+        </div>
+        <div class="card-body">
+          <p class="card-desc">Cosa significa ENplus A1, come si differenzia dalle altre classi e perché fa davvero la differenza per la tua stufa o caldaia.</p>
+          <div class="card-meta">📅 Prossimamente</div>
+          <span class="badge-soon">In arrivo</span>
+        </div>
+      </article>
+
+      <!-- ARTICOLO 3 — COMING SOON -->
+      <article class="card coming">
+        <div class="card-top">
+          <div class="card-cat">🪵 Confronto</div>
+          <div class="card-title">Pellet vs Legna da Ardere: Quale Conviene nel 2025</div>
+        </div>
+        <div class="card-body">
+          <p class="card-desc">Confronto pratico tra pellet e legna da ardere: costi, praticità, potere calorifico e quale scegliere in base al tuo impianto.</p>
+          <div class="card-meta">📅 Prossimamente</div>
+          <span class="badge-soon">In arrivo</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="cta-box">
+      <div class="cta-inner">
+        <h2>ORDINA IL PELLET<br><span>A DOMICILIO</span></h2>
+        <p>ENplus A1 certificato. Consegna rapida in tutta la Lombardia. Pagamento alla consegna.</p>
+        <a href="tel:+393336453219" class="cta-tel">333 645 3219</a>
+        <p class="cta-note">LUN–SAB · 8:00–18:00 · RISPOSTA IMMEDIATA</p>
+        <a href="https://wa.me/393336453219?text=Ciao%2C%20vorrei%20un%20preventivo%20per%20il%20pellet%20ENplus%20A1" class="cta-wa">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="footer-logo">Pellet<span>Consegna</span>.it</span>
+  <p class="footer-info">
+    P.IVA IT10927440965 · <a href="tel:+393336453219">333 645 3219</a><br>
+    <a href="/privacy.html">Privacy Policy</a> · <a href="/cookie.html">Cookie Policy</a> · <a href="/index.html">Home</a><br>
+    <small style="opacity:.4">© 2026 PelletConsegna.it · Tutti i diritti riservati</small>
+  </p>
+</footer>
+
+<div class="floating">
+  <a href="https://wa.me/393336453219" class="fl-btn fl-wa">💬 <span>WhatsApp</span></a>
+  <a href="tel:+393336453219" class="fl-btn fl-tel">📞 <span>Chiama</span></a>
+</div>
+
+</body>
+</html>
