@@ -1,0 +1,45 @@
+name: Add Canonical Tags
+
+on:
+  workflow_dispatch:
+
+jobs:
+  add-canonical:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Add canonical to all pellet pages
+        run: |
+          BASE="https://www.pelletconsegna.it"
+          
+          for file in pellet-*.html; do
+            # Controlla se canonical già esiste
+            if grep -q 'rel="canonical"' "$file"; then
+              echo "Già presente: $file"
+              continue
+            fi
+            
+            # Costruisce URL canonical dal nome file
+            CANONICAL="${BASE}/${file}"
+            
+            # Inserisce canonical dopo meta description
+            sed -i "s|<meta name=\"description\"|<link rel=\"canonical\" href=\"${CANONICAL}\"/>\n<meta name=\"description\"|" "$file"
+            
+            echo "Aggiunto canonical: $file → $CANONICAL"
+          done
+          
+          # Aggiunge canonical anche all'index
+          if ! grep -q 'rel="canonical"' index.html; then
+            sed -i "s|<meta name=\"description\"|<link rel=\"canonical\" href=\"${BASE}/\"/>\n<meta name=\"description\"|" index.html
+            echo "Aggiunto canonical: index.html"
+          fi
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Add canonical tags to all pages"
+          git push
