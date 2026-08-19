@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cookie Policy – PelletConsegna.it</title>
+<title>Cookie Policy &ndash; PelletConsegna.it</title>
+<meta name="robots" content="noindex, follow">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{--nero:#060d1a;--notte:#0a1628;--marina:#0f2040;--azzurro:#3d9be9;--verde:#00c896;--bianco:#f0f8ff;--crema:#e8f4fd}
@@ -13,15 +14,24 @@ nav{padding:20px 40px;display:flex;justify-content:space-between;align-items:cen
 .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;color:var(--azzurro);text-decoration:none}
 .nav-logo span{color:var(--verde)}
 .nav-back{color:var(--azzurro);text-decoration:none;font-size:14px;font-weight:500}
-.container{max-width:800px;margin:0 auto;padding:60px 30px}
+.container{max-width:800px;margin:0 auto;padding:60px 30px 120px}
 h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,6vw,56px);letter-spacing:2px;color:var(--bianco);margin-bottom:8px}
 .data{font-size:13px;color:rgba(240,248,255,.35);margin-bottom:50px}
 h2{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:1px;color:var(--azzurro);margin:35px 0 12px}
 p{font-size:16px;color:rgba(240,248,255,.7);margin-bottom:14px}
+ul{margin:0 0 16px 22px}
+li{font-size:16px;color:rgba(240,248,255,.7);margin-bottom:6px}
+code{background:rgba(61,155,233,.12);color:var(--crema);padding:2px 6px;border-radius:3px;font-size:13px}
+.wrap-tab{overflow-x:auto}
 table{width:100%;border-collapse:collapse;margin-bottom:20px}
 th{background:rgba(61,155,233,.15);color:var(--azzurro);padding:12px 16px;text-align:left;font-size:14px;font-weight:600}
-td{padding:12px 16px;border-bottom:1px solid rgba(61,155,233,.08);font-size:14px;color:rgba(240,248,255,.65)}
+td{padding:12px 16px;border-bottom:1px solid rgba(61,155,233,.08);font-size:14px;color:rgba(240,248,255,.65);vertical-align:top}
 a{color:var(--azzurro);text-decoration:none}
+a:hover{text-decoration:underline}
+button.azione{background:var(--azzurro);color:#fff;border:none;border-radius:4px;padding:12px 22px;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer}
+button.azione:hover{background:#2d84cc}
+.nota{background:rgba(0,200,150,.08);border-left:3px solid var(--verde);padding:16px 20px;margin:20px 0}
+.nota p{margin:0}
 footer{text-align:center;padding:30px;border-top:1px solid rgba(61,155,233,.1);font-size:13px;color:rgba(240,248,255,.25)}
 </style>
   <!-- Misurazione conversioni Google Ads -->
@@ -29,27 +39,80 @@ footer{text-align:center;padding:30px;border-top:1px solid rgba(61,155,233,.1);f
 </head>
 <body>
 <nav>
-  <a href="index.html" class="nav-logo">Pellet<span>Consegna</span>.it</a>
-  <a href="index.html" class="nav-back">← Torna al sito</a>
+  <a href="/" class="nav-logo">Pellet<span>Consegna</span>.it</a>
+  <a href="/" class="nav-back">&larr; Torna al sito</a>
 </nav>
 <div class="container">
   <h1>Cookie Policy</h1>
-  <p class="data">Ultimo aggiornamento: Aprile 2026</p>
-  <h2>Cosa sono i Cookie</h2>
-  <p>I cookie sono piccoli file di testo salvati sul dispositivo dell'utente durante la navigazione.</p>
-  <h2>Cookie Utilizzati</h2>
-  <p>Il sito <strong>pelletconsegna.it</strong> utilizza esclusivamente <strong>cookie tecnici</strong> necessari al funzionamento. Nessun cookie di profilazione o pubblicitario.</p>
+  <p class="data">Ultimo aggiornamento: 19 agosto 2026 &middot; Conforme al Regolamento UE 2016/679 (GDPR), all'art. 122 del D.lgs. 196/2003 e alle Linee Guida Cookie del Garante Privacy del 10 giugno 2021</p>
+
+  <h2>1. Titolare del trattamento</h2>
+  <p><strong>Verde Oliva S.r.l.s.</strong> &ndash; P.IVA IT10927440965<br>
+  Tel. <a href="tel:+393336453219">333 645 3219</a></p>
+
+  <h2>2. Cosa sono i cookie</h2>
+  <p>I cookie sono piccoli file di testo salvati sul dispositivo dell'utente durante la navigazione. Insieme ai cookie il sito utilizza tecnologie equivalenti (localStorage), soggette alle medesime regole.</p>
+
+  <h2>3. Cookie tecnici (necessari)</h2>
+  <p>Servono al funzionamento del sito e non richiedono consenso ai sensi dell'art. 122, comma 1, del Codice privacy.</p>
+  <div class="wrap-tab">
   <table>
-    <tr><th>Nome</th><th>Tipo</th><th>Finalità</th><th>Durata</th></tr>
-    <tr><td>Sessione browser</td><td>Tecnico</td><td>Navigazione corretta</td><td>Sessione</td></tr>
+    <tr><th>Nome</th><th>Tipo</th><th>Titolare</th><th>Durata</th><th>Finalit&agrave;</th></tr>
+    <tr><td><code>cc</code></td><td>localStorage</td><td>Verde Oliva S.r.l.s.</td><td>Persistente, fino a cancellazione</td><td>Memorizza la scelta espressa sul banner cookie</td></tr>
   </table>
-  <h2>Google Fonts</h2>
-  <p>Utilizziamo Google Fonts per i caratteri tipografici. Google potrebbe raccogliere dati anonimi. Info: <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy Google</a>.</p>
-  <h2>Come Disabilitare i Cookie</h2>
-  <p><a href="https://support.google.com/chrome/answer/95647" target="_blank">Chrome</a> · <a href="https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie" target="_blank">Firefox</a> · <a href="https://support.apple.com/it-it/guide/safari/sfri11471/mac" target="_blank">Safari</a></p>
-  <h2>Contatti</h2>
-  <p>Per informazioni: <a href="tel:+393336453219">333 645 3219</a> · <a href="privacy.html">Privacy Policy</a></p>
+  </div>
+
+  <h2>4. Cookie di marketing &ndash; Google Ads</h2>
+  <p>Il sito utilizza <strong>Google Ads</strong> (ID conversione AW-959116144) per misurare quante richieste di contatto arrivano dagli annunci pubblicitari, in particolare i clic sul numero di telefono. Questi cookie sono <strong>installati solo dopo il consenso esplicito</strong> prestato tramite il banner: fino a quel momento il sistema <em>Consent Mode v2</em> di Google mantiene lo stato su &laquo;negato&raquo; e nessun cookie pubblicitario viene scritto.</p>
+  <div class="wrap-tab">
+  <table>
+    <tr><th>Nome</th><th>Tipo</th><th>Titolare</th><th>Durata</th><th>Finalit&agrave;</th><th>Consenso</th></tr>
+    <tr><td><code>_gcl_au</code></td><td>Prima parte</td><td>Google Ireland Ltd</td><td>90 giorni</td><td>Attribuzione delle conversioni agli annunci Google Ads</td><td>Richiesto</td></tr>
+    <tr><td><code>_gcl_aw</code>, <code>_gcl_dc</code></td><td>Prima parte</td><td>Google Ireland Ltd</td><td>90 giorni</td><td>Memorizzano il clic sull'annuncio che ha portato l'utente al sito</td><td>Richiesto</td></tr>
+    <tr><td><code>IDE</code>, <code>test_cookie</code><br><span style="color:rgba(240,248,255,.35);font-size:13px">(dominio doubleclick.net)</span></td><td>Terza parte</td><td>Google Ireland Ltd</td><td>13 mesi / 15 minuti</td><td>Possono essere impostati da Google per misurare l'efficacia degli annunci e verificare il supporto dei cookie da parte del browser</td><td>Richiesto</td></tr>
+  </table>
+  </div>
+  <p>Rispetto a questi trattamenti Google Ireland Ltd opera come <strong>titolare autonomo</strong> per le proprie finalit&agrave;. Informativa di Google: <a href="https://business.safety.google/privacy/" target="_blank" rel="noopener">business.safety.google/privacy</a> &middot; <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Modalit&agrave; d'uso dei dati</a>.</p>
+
+  <div class="nota">
+    <p><strong>Il sito non utilizza Google Analytics</strong> n&eacute; altri strumenti di statistica, e non effettua profilazione commerciale degli utenti al di fuori della misurazione delle conversioni pubblicitarie sopra descritta.</p>
+  </div>
+
+  <h2>5. Base giuridica</h2>
+  <p>Cookie tecnici: necessit&agrave; di erogare il servizio richiesto dall'utente (art. 122 c. 1 Codice privacy). Cookie di marketing: <strong>consenso dell'interessato</strong> (art. 6, par. 1, lett. a GDPR e art. 122 c. 1 Codice privacy), libero, specifico e revocabile in ogni momento con la stessa facilit&agrave; con cui &egrave; stato prestato.</p>
+
+  <h2>6. Trasferimento dei dati fuori dall'Unione Europea</h2>
+  <p>I dati raccolti dai cookie di marketing possono essere trasferiti a Google LLC negli Stati Uniti. Il trasferimento avviene sulla base della <strong>decisione di adeguatezza della Commissione europea del 10 luglio 2023</strong> (EU&ndash;US Data Privacy Framework, cui Google LLC aderisce) e, in via ulteriore, delle Clausole Contrattuali Tipo approvate dalla Commissione.</p>
+
+  <h2>7. Google Fonts</h2>
+  <p>Il sito carica i caratteri tipografici da Google Fonts (fonts.googleapis.com). La richiesta comporta la trasmissione dell'indirizzo IP a Google. Non vengono installati cookie per questa finalit&agrave;.</p>
+
+  <h2>8. Come revocare o modificare il consenso</h2>
+  <p>Puoi riaprire il banner e cambiare la tua scelta in qualsiasi momento:</p>
+  <p><button type="button" class="azione" id="riapri-preferenze">Modifica le preferenze cookie</button></p>
+  <p>Puoi inoltre disattivare la personalizzazione degli annunci direttamente presso Google su <a href="https://myadcenter.google.com" target="_blank" rel="noopener">myadcenter.google.com</a>, oppure gestire ed eliminare i cookie dal tuo browser:</p>
+  <ul>
+    <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li>
+    <li><a href="https://support.mozilla.org/it/kb/protezione-antitracciamento-avanzata-firefox" target="_blank" rel="noopener">Mozilla Firefox</a></li>
+    <li><a href="https://support.apple.com/it-it/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Apple Safari</a></li>
+    <li><a href="https://support.microsoft.com/it-it/microsoft-edge/eliminare-i-cookie-in-microsoft-edge" target="_blank" rel="noopener">Microsoft Edge</a></li>
+  </ul>
+  <p>La revoca del consenso non pregiudica la liceit&agrave; del trattamento effettuato prima della revoca.</p>
+
+  <h2>9. Diritti dell'interessato e contatti</h2>
+  <p>Puoi esercitare i diritti previsti dagli artt. 15&ndash;22 GDPR (accesso, rettifica, cancellazione, limitazione, opposizione, portabilit&agrave;) contattando il titolare al numero <a href="tel:+393336453219">333 645 3219</a>. Hai inoltre diritto di proporre reclamo al <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">Garante per la protezione dei dati personali</a>.</p>
+  <p>Vedi anche la <a href="/privacy.html">Privacy Policy</a>.</p>
 </div>
-<footer>© 2026 PelletConsegna.it · P.IVA IT10927440965</footer>
+<footer>&copy; 2026 PelletConsegna.it &middot; Verde Oliva S.r.l.s. &middot; P.IVA IT10927440965</footer>
+<script>
+(function(){
+  var b = document.getElementById('riapri-preferenze');
+  if (!b) return;
+  b.addEventListener('click', function(){
+    try { localStorage.removeItem('cc'); localStorage.removeItem('cookie_consent'); } catch(e){}
+    location.reload();
+  });
+})();
+</script>
 </body>
 </html>
